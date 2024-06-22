@@ -38,7 +38,7 @@ def send_packets(website, port, packs):
         sock.close()
 
         if webstatus(website):
-            print(f"Sended {packs} to {website}, but it is still online.")
+            print(f"Sended {packs} Packets to {website}, but it is still online.")
         else:
             print(f"Cool! The website '{website}' is closed or offline.")
             print("You just sended", packs * times, "Packets, WOW!")
