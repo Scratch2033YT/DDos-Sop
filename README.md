@@ -7,5 +7,6 @@ while some ddos work in termux, f-droid termux is in a website, which some of yo
 Thanks for downloading!
 THE APP IS 100% SAFE AND I TRIED IT,
 THE SCRIPT IS 100% SAFE AND IF YOU GET DDOSED DON'T CONTACT ME.
+ONLY FOR EDUCATIONAL PURPOSSES ONLY. DO NOT DDOS INNOCENT PEOPLE!
 
 # POWERED BY CHATGPT 4 (Free, Poe.com)
