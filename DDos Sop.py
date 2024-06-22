@@ -41,7 +41,7 @@ def send_packets(website, port, packs):
             print(f"Sended {packs} to {website}, but it is still online.")
         else:
             print(f"Cool! The website '{website}' is closed or offline.")
-            print("You just sended ," packs * times, "Packets, WOW!")
+            print("You just sended", packs * times, "Packets, WOW!")
             exit(0)
     except socket.error as e:
         print(f"An error occurred: {str(e)}")
