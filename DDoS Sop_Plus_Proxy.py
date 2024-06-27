@@ -69,5 +69,5 @@ if port == None:
  send()
 else:
  send()
-  while True:
+while True:
    send_packets(website, port, packs, proxy)
