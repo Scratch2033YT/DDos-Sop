@@ -2,6 +2,10 @@ import socket
 import time
 import urllib.request
 
+def send():
+  packs = input("Input number of packets to be sent: ")
+  proxy = "open.proxymesh.com:31280"
+
 def webstatus(url):
     try:
         ip = socket.gethostbyname(url)
@@ -64,8 +68,6 @@ if port == None:
  port = int(input("Manual port needed: "))
  send()
 else:
- def send():
-  packs = input("Input number of packets to be sent: ")
-  proxy = "open.proxymesh.com:31280"
+ send()
   while True:
    send_packets(website, port, packs, proxy)
